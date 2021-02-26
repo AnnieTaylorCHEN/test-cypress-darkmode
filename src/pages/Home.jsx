@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const ContentWrapper = styled.div`
 	display: flex;
 	flex-direction: column;
-	padding: 2em;
+	padding: 2rem;
 	align-items: center;
 	justify-content: center;
 	flex: 1;
@@ -12,7 +12,7 @@ const ContentWrapper = styled.div`
 
 const Title = styled.h1`
 	font-size: 2rem;
-	margin: 0;
+	margin: 2rem;
 `;
 
 const SubTitle = styled.p`
@@ -24,7 +24,9 @@ const Home = () => {
 	return (
 		<ContentWrapper>
 			<Title>Test light and dark mode</Title>
-			<SubTitle>Light mode: you shall see a dog</SubTitle>
+			<div className="bg"></div>
+			<SubTitle>Light mode: you shall see a dog in light background</SubTitle>
+			<SubTitle>Dark mode: you shall see a cat in dark background</SubTitle>
 		</ContentWrapper>
 	);
 };

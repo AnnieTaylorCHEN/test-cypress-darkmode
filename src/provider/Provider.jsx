@@ -41,7 +41,8 @@ const Provider = ({ children }) => {
 
 	return (
 		<>
-			<GlobalStyles darkmode={darkMode}>{children}</GlobalStyles>
+			<GlobalStyles darkmode={darkMode} />
+			{children}
 		</>
 	);
 };

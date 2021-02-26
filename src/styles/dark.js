@@ -9,4 +9,10 @@ body {
     background-color: ${darkThemeBlack};
     color: ${darkThemeWhite};
 }
+
+.bg {
+    background: url(./cat.jpg);
+    width: 800px;
+    height: 500px;
+}
 `

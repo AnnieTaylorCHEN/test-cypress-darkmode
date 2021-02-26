@@ -1,0 +1,7 @@
+{
+	"viewportHeight": 900,
+	"viewportWidth": 1000,
+	"chromeWebSecurity": false,
+    "darkMediaQuery": true,
+    "baseUrl": "http://localhost:3000"
+}
