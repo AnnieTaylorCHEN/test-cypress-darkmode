@@ -8,7 +8,6 @@ const Provider = ({ children }) => {
   const query = new URLSearchParams(useLocation().search);
   const darkmodeQuery = query.get("darkmode");
 
-
   useEffect(() => {
     if (
       window.matchMedia &&

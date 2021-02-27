@@ -115,11 +115,9 @@ useEffect(() => {
     });
 ```
 
-When you returned `{matches: true}` that object does not contain a function for `addEventListener`
+Previously in the code which didn't work, when you returned `{matches: true}` that object does not contain a function for `addEventListener`
 
-So when we call that in the code above you get an error.
-
-That got caught in the catch(e2)here:
+So when we call that in the code above you get an error. That got caught in the catch(e2)here:
 
 ```
 try {
@@ -138,4 +136,6 @@ try {
       }
     }
 ```
-which just sets darkMode to false.
+which just sets darkMode to false. So no matter you say `matches` is true or false, it will always get errors and get caught in e2 and load the light mode. So we always see light mode when testing in cypress. 
+
+That's why we add the `addEventListener` in the `cy.stub()`'s return object so the code will process correctly as we intended. 
